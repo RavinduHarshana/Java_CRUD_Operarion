@@ -4,7 +4,7 @@ public class Create {
         String url="jdbc:mysql://localhost:3306/java_test";
         String user="root";
         String password="1234";
-        String Query="INSERT INTO user VALUES (1,'Jhone','Ravi','Mathara')";
+        String Query="INSERT INTO user VALUES (2,'Ravindu','Harsha','Mawanella')";
 
         Connection connection=null;
 
@@ -13,6 +13,8 @@ public class Create {
             connection =DriverManager.getConnection(url,user,password);
             Statement statement=connection.createStatement();
             statement.executeUpdate(Query);
+
+            System.out.println("Data Inserted successfully");
 
         }catch (Exception e){
             System.out.println("Error");
