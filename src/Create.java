@@ -4,7 +4,7 @@ public class Create {
         String url="jdbc:mysql://localhost:3306/java_test";
         String user="root";
         String password="1234";
-        String Query="INSERT INTO user values(1,'jhone','er','Mawanella');";
+        String Query="INSERT INTO user VALUES (1,'Jhone','Ravi','Mathara')";
 
         Connection connection=null;
 
